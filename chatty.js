@@ -2,6 +2,6 @@
 
   document.addEventListener("keydown", function(event) {
     if (event.keyCode === 13) {
-      document.getElementById('userMessage').innerHTML = inputMessage.value;
+      document.getElementById('message-board').innerHTML = inputMessage.value;
     }
   });
