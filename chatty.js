@@ -42,4 +42,3 @@
 //     ${userinput}
 //     <button type="button" name="delete-post">Delete</button>
 // </p>
->>>>>>> a12f5a3aebdca0295e079bf345bf8ba235a8eac7
