@@ -1,5 +1,5 @@
-
 var inputMessage = document.getElementById('inputMessage');
+
 
 document.addEventListener("keydown", function(event) {
 var userInputMessage = "";
@@ -15,9 +15,16 @@ if (event.key === "Enter") {
     document.getElementById('message-board').innerHTML += userInputMessage;
 });
 
+//   document.querySelector("div.message-board").addEventListener("click", function(e) {
+//     console.log(e);
+//
+//   if (e.target.className === "deleteButton") {
+//     console.log("You clicked on the delete button");
+//   }
+// });
 
 
-// requesting data from starter-msg and loading data upon page load
+
 var productData = new XMLHttpRequest();
 productData.addEventListener("load", starterMessages);
 productData.open("GET", "starter-msg.json");
@@ -45,29 +52,3 @@ clearBoard.addEventListener("click", function(e){
     e.preventDefault();
     document.getElementById('message-board').innerHTML = '';
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//html to append each time the user inputs text
-// <p>
-//     ${userinput}
-//     <button type="button" name="delete-post">Delete</button>
-// </p>
