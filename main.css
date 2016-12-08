@@ -9,3 +9,7 @@ img {
   margin: 5%;
 
 }
+
+.deleteButton {
+    border-radius: 5px;
+}
