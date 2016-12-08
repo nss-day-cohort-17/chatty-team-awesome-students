@@ -16,10 +16,10 @@ if (event.key === "Enter") {
 });
 
   document.querySelector("body").addEventListener("click", function(e) {
-    console.log(e);
 
   if (e.target.className === "deleteButton") {
-    console.log("You clicked on the delete button");
+
+    e.target.parentElement.parentElement.removeChild(e.target.parentElement)
   }
 });
 
