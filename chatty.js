@@ -2,9 +2,14 @@
   var inputMessage = document.getElementById('inputMessage');
 
   document.addEventListener("keydown", function(event) {
-    if (event.keyCode === 13) {
+    if (event.key === "Enter") {
       event.preventDefault();
-      document.getElementById('message-board').innerHTML = inputMessage.value;
+      document.getElementById('message-board').innerHTML =
+      `<p>
+          ${inputMessage.value}
+          <button type="button" name="delete-post">Delete</button>
+      </p>`
+
     }
   });
 
