@@ -1,6 +1,10 @@
 //global variables caputer user input and clear message board button
 var inputMessage = document.getElementById('inputMessage');
 var clearBoard = document.getElementById('clearBoard');
+
+var checkbox2 = document.getElementById('largeText');
+
+
 var messageBoard = document.getElementById('message-board');
 
 //populates html page upon enter button pressed
@@ -63,4 +67,12 @@ clearBoard.addEventListener("click", function(e){
     document.getElementById('message-board').innerHTML = '';
     //disables the button after it deletes the board UNTIL more user inputs are added
     clearBoard.disabled = true;
+})
+
+
+checkbox2.addEventListener("click", function (e) {
+  console.log(e)
+  var targetBody = document.getElementById('theBody');
+  targetBody.style.fontSize = "1.8em";
+  targetBody.style.color = "black";
 })
