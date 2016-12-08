@@ -15,13 +15,13 @@ if (event.key === "Enter") {
     document.getElementById('message-board').innerHTML += userInputMessage;
 });
 
-//   document.querySelector("div.message-board").addEventListener("click", function(e) {
-//     console.log(e);
-//
-//   if (e.target.className === "deleteButton") {
-//     console.log("You clicked on the delete button");
-//   }
-// });
+  document.querySelector("body").addEventListener("click", function(e) {
+    console.log(e);
+
+  if (e.target.className === "deleteButton") {
+    console.log("You clicked on the delete button");
+  }
+});
 
 
 
