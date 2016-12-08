@@ -13,3 +13,8 @@ img {
 .deleteButton {
     border-radius: 5px;
 }
+
+.theBody, .addDarkTheme {
+  background-color: black;
+  color: white;
+}
