@@ -1,6 +1,6 @@
 var inputMessage = document.getElementById('inputMessage');
 var clearBoard = document.getElementById('clearBoard');
-
+var checkbox2 = document.getElementById('largeText');
 
 document.addEventListener("keydown", function(event) {
 var userInputMessage = "";
@@ -53,4 +53,12 @@ clearBoard.addEventListener("click", function(e){
     e.preventDefault();
     document.getElementById('message-board').innerHTML = '';
     clearBoard.disabled = true;
+})
+
+
+checkbox2.addEventListener("click", function (e) {
+  console.log(e)
+  var targetBody = document.getElementById('theBody');
+  targetBody.style.fontSize = "1.8em";
+  targetBody.style.color = "black";
 })
