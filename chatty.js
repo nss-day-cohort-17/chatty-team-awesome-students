@@ -6,21 +6,23 @@
     if (event.key === "Enter") {
       event.preventDefault();
       userInputMessage  +=
-      `<p>
+      `<p class="messageSection">
           ${inputMessage.value}
-          <button type="button" name="delete-post">Delete</button>
+          <button class="deleteButton" type="button name="delete-post">Delete</button>
+
       </p>`
       document.getElementById('inputMessage').value = "";
     }
     document.getElementById('message-board').innerHTML += userInputMessage;
   });
 
+  document.querySelector("body").addEventListener("click", function(e) {
+    console.log(e);
 
-
-
-
-
-
+  if (e.target.className === "deleteButton") {
+    console.log("You clicked on the delete button");
+  }
+});
 
 
 
