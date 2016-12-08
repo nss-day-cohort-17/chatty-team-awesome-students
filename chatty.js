@@ -69,13 +69,20 @@ clearBoard.addEventListener("click", function(e){
     clearBoard.disabled = true;
 })
 
+//large text checkbox makes all the font larger
+checkbox2.addEventListener("click", function (e) {
+  console.log(e)
+  var targetBody = document.getElementById('theBody');
+  if (checkbox2.checked) {
+      targetBody.style.fontSize = "1.8em";
+      targetBody.style.color = "black";
+  } else {
+      targetBody.style.fontSize = "1em";
+  }
+})
+
 checkbox1.addEventListener("click", function(e){
   targetBody.className += "addDarkTheme"
   targetNav.className += "addDarkTheme"
 
-})
-
-checkbox2.addEventListener("click", function (e) {
-  targetBody.style.fontSize = "1.8em";
-  targetBody.style.color = "black";
 })

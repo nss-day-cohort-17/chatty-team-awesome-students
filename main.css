@@ -24,6 +24,10 @@ img {
     border-radius: 5px;
 }
 
+input {
+    margin-right: 5px;
+
+}
 .theBody, .addDarkTheme {
   background-color: black;
   color: white;
@@ -35,4 +39,3 @@ img {
 
 #navTheme {
   margin-bottom: 10%;
-}
