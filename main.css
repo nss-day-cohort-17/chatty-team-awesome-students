@@ -3,10 +3,19 @@ img {
   border-radius: 50%;
 }
 
+.stretch {
+  dispaly: flex;
+  flex-direction:  column;
+  min-height: 100vh;
+}
 
 #message-board {
   border: 2px solid black;
   margin: 5%;
+  min-height: 500px;
+  margin: 20%;
+  flex: 1;
+  overflow: scroll;
 
 }
 
