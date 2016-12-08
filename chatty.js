@@ -72,11 +72,10 @@ clearBoard.addEventListener("click", function(e){
 checkbox1.addEventListener("click", function(e){
   targetBody.className += "addDarkTheme"
   targetNav.className += "addDarkTheme"
-
+  }
 })
 
 checkbox2.addEventListener("click", function (e) {
-  console.log(e)
   targetBody.style.fontSize = "1.8em";
   targetBody.style.color = "black";
 })
