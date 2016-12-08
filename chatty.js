@@ -1,4 +1,5 @@
 var inputMessage = document.getElementById('inputMessage');
+var clearBoard = document.getElementById('clearBoard');
 
 
 document.addEventListener("keydown", function(event) {
@@ -11,14 +12,15 @@ if (event.key === "Enter") {
                             <button class="deleteButton" type="button" name="delete-post">Delete</button>
                         </p>`
         document.getElementById('inputMessage').value = "";
+
+        //turns the clear message board button back on after user input
+        clearBoard.disabled = false;
     }
     document.getElementById('message-board').innerHTML += userInputMessage;
 });
 
-  document.querySelector("body").addEventListener("click", function(e) {
-
+document.querySelector("body").addEventListener("click", function(e) {
   if (e.target.className === "deleteButton") {
-
     e.target.parentElement.parentElement.removeChild(e.target.parentElement)
   }
 });
@@ -43,12 +45,12 @@ function starterMessages(e) {
                             </p>`
     }
     document.getElementById('message-board').innerHTML += startMessage;
+
 }
 
-
 //clear message board
-var clearBoard = document.getElementById('clearBoard');
 clearBoard.addEventListener("click", function(e){
     e.preventDefault();
     document.getElementById('message-board').innerHTML = '';
+    clearBoard.disabled = true;
 })
