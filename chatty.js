@@ -6,24 +6,24 @@ var userInputMessage = "";
 if (event.key === "Enter") {
   event.preventDefault();
   userInputMessage  +=
-  `<p>
-      ${inputMessage.value}
-      <button class="deleteButton" type="button" name="delete-post">Delete</button>
-  </p>`
-  document.getElementById('inputMessage').value = "";
-}
-document.getElementById('message-board').innerHTML += userInputMessage;
+                        `<p>
+                            ${inputMessage.value}
+                            <button class="deleteButton" type="button" name="delete-post">Delete</button>
+                        </p>`
+        document.getElementById('inputMessage').value = "";
+    }
+    document.getElementById('message-board').innerHTML += userInputMessage;
 });
 
 
 
-
+// requesting data from starter-msg and loading data upon page load
 var productData = new XMLHttpRequest();
 productData.addEventListener("load", starterMessages);
 productData.open("GET", "starter-msg.json");
 productData.send();
 
-
+//populates the data to the html page
 function starterMessages(e) {
     var data = JSON.parse(e.target.responseText);
 
@@ -39,10 +39,12 @@ function starterMessages(e) {
 }
 
 
-
-
-
-
+//clear message board
+var clearBoard = document.getElementById('clearBoard');
+clearBoard.addEventListener("click", function(e){
+    e.preventDefault();
+    document.getElementById('message-board').innerHTML = '';
+})
 
 
 
