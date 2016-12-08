@@ -16,7 +16,7 @@
     document.getElementById('message-board').innerHTML += userInputMessage;
   });
 
-  document.querySelector("body").addEventListener("click", function(e) {
+  document.querySelector("div.message-board").addEventListener("click", function(e) {
     console.log(e);
 
   if (e.target.className === "deleteButton") {
