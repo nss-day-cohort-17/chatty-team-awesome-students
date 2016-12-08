@@ -1,10 +1,10 @@
 //global variables caputer user input and clear message board button
 var inputMessage = document.getElementById('inputMessage');
 var clearBoard = document.getElementById('clearBoard');
-
+var checkbox1 = document.getElementById('darkTheme')
 var checkbox2 = document.getElementById('largeText');
-
-
+var targetNav = document.getElementById('navTheme')
+var targetBody = document.querySelector('body')
 var messageBoard = document.getElementById('message-board');
 
 //populates html page upon enter button pressed
@@ -79,4 +79,10 @@ checkbox2.addEventListener("click", function (e) {
   } else {
       targetBody.style.fontSize = "1em";
   }
+})
+
+checkbox1.addEventListener("click", function(e){
+  targetBody.className += "addDarkTheme"
+  targetNav.className += "addDarkTheme"
+
 })

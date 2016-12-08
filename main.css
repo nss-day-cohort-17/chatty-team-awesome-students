@@ -13,7 +13,7 @@ img {
   border: 2px solid black;
   margin: 5%;
   min-height: 500px;
-  margin: 20% 5%;
+  /*margin: 20% 5%;*/
   padding: 5%;
   flex: 1;
   overflow: scroll;
@@ -26,4 +26,16 @@ img {
 
 input {
     margin-right: 5px;
+
 }
+.theBody, .addDarkTheme {
+  background-color: black;
+  color: white;
+}
+
+.message-heading {
+  margin-top: 13%;
+}
+
+#navTheme {
+  margin-bottom: 10%;
