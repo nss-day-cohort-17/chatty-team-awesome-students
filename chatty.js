@@ -70,7 +70,7 @@ clearBoard.addEventListener("click", function(e){
 })
 
 //large text checkbox makes all the font larger
-checkbox2.addEventListener("click", function (e) {
+checkbox2.addEventListener("click", function(e) {
   console.log(e)
   var targetBody = document.getElementById('theBody');
   if (checkbox2.checked) {
