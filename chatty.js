@@ -15,13 +15,13 @@ var inputMessage = document.getElementById('inputMessage');
     document.getElementById('message-board').innerHTML += userInputMessage;
   });
 
-  document.querySelector("div.message-board").addEventListener("click", function(e) {
-    console.log(e);
-
-  if (e.target.className === "deleteButton") {
-    console.log("You clicked on the delete button");
-  }
-});
+//   document.querySelector("div.message-board").addEventListener("click", function(e) {
+//     console.log(e);
+//
+//   if (e.target.className === "deleteButton") {
+//     console.log("You clicked on the delete button");
+//   }
+// });
 
 var productData = new XMLHttpRequest();
 productData.addEventListener("load", starterMessages);
@@ -40,7 +40,7 @@ function starterMessages(e) {
                                 <button class="deleteButton" type="button" name="delete-post">Delete</button>
                             </p>`
     }
-    document.getElementById('message-board').innerHTML += startMessage;
+    document.getElementById('inputMessage').innerHTML += startMessage;
 }
 
 
