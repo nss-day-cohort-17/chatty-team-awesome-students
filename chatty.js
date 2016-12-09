@@ -75,14 +75,19 @@ checkbox2.addEventListener("click", function (e) {
   var targetBody = document.getElementById('theBody');
   if (checkbox2.checked) {
       targetBody.style.fontSize = "1.8em";
-      targetBody.style.color = "black";
+
   } else {
       targetBody.style.fontSize = "1em";
   }
 })
 
 checkbox1.addEventListener("click", function(e){
+  if (checkbox1.checked) {
   targetBody.className += "addDarkTheme"
   targetNav.className += "addDarkTheme"
+} else {
+  targetBody.classList.remove("addDarkTheme");
+  targetNav.classList.remove("addDarkTheme");
+}
 
 })
