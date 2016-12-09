@@ -3,17 +3,17 @@ img {
   border-radius: 50%;
 }
 
-.stretch {
+/*.stretch {
   dispaly: flex;
   flex-direction:  column;
   min-height: 100vh;
-}
+}*/
 
 #message-board {
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   margin: 5%;
   min-height: 500px;
-  padding: 5%;
+    padding: 5%;
   flex: 1;
   overflow: scroll;
 
@@ -34,7 +34,26 @@ input {
 
 .message-heading {
   margin-top: 13%;
+  margin-left: 1%;
 }
 
 #navTheme {
   margin-bottom: 10%;
+  padding-left: 2%;
+}
+
+#centerCheckbox {
+  margin-left: 25%;
+}
+
+.sBar {
+  width: 60%;
+}
+
+.borderBlack {
+  border: 2px solid black;
+}
+
+.borderWhite {
+  border: 2px solid white;
+}
