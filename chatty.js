@@ -7,6 +7,7 @@ var targetNav = document.getElementById('navTheme')
 var targetBody = document.querySelector('body')
 var messageBoard = document.getElementById('message-board');
 
+
 //populates html page upon enter button pressed
 document.addEventListener("keydown", function(event) {
 var userInputMessage = "";
@@ -75,14 +76,22 @@ checkbox2.addEventListener("click", function (e) {
   var targetBody = document.getElementById('theBody');
   if (checkbox2.checked) {
       targetBody.style.fontSize = "1.8em";
-      targetBody.style.color = "black";
+
   } else {
       targetBody.style.fontSize = "1em";
   }
 })
 
 checkbox1.addEventListener("click", function(e){
+  if (checkbox1.checked) {
   targetBody.className += "addDarkTheme"
   targetNav.className += "addDarkTheme"
+  messageBoard.classList.remove("borderBlack")
+  messageBoard.classList.add("borderWhite")
+} else {
+  targetBody.classList.remove("addDarkTheme");
+  targetNav.classList.remove("addDarkTheme");
+  messageBoard.className = "borderBlack";
+}
 
 })
